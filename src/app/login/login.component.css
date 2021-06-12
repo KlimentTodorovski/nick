@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+min-width: 100vh;
+min-height: 100vh;
+font-family: 'Numans', sans-serif;
+background: url('http://pavbca.com/walldb/original/7/f/8/122538.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 350px;
+margin: auto;
+width: 400px;
+background-color: rgba(255, 219, 207, 0.5) !important;
+margin-top: 50px;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: #FFC312;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.yellow{
+    color: rgb(211, 172, 45);
+}

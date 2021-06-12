@@ -1,0 +1,18 @@
+html,body{
+    min-width: 100vh;
+    min-height: 100vh;
+    background: url('http://pavbca.com/walldb/original/7/f/8/122538.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    height: 100%;
+    align-content: center;
+}
+.card{
+    margin:3px;
+    max-width: 200px;
+    max-height: 230px;
+}
