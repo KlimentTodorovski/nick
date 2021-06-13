@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'math', loadChildren: () => import('./math/math.module').then(m => m.MathModule) },
   { path: 'read-and-write', loadChildren: () => import('./read-and-write/read-and-write.module').then(m => m.ReadAndWriteModule) },
   { path: 'sport', loadChildren: () => import('./sport/sport.module').then(m => m.SportModule) },
+  { path: 'emotions', loadChildren: () => import('./emotions/emotions.module').then(m => m.EmotionModule) },
   { path: '**', pathMatch: 'full', redirectTo: '/home' }
 ];
 
