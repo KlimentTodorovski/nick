@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-math',
@@ -8,10 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class MathComponent implements OnInit {
 
-  constructor(
-    private router: Router,
-    public route: ActivatedRoute
-  ) { }
+  constructor(public route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

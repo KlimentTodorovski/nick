@@ -1,0 +1,10 @@
+<div class="container">
+  Прашање {{questionIndex+1}} од {{questions.length}}
+  <br>
+  <h5>{{currentQuestion}}</h5>
+  <img *ngIf="image !== null" src="assets/{{image}}_{{questionIndex}}.jpg" />
+  <p *ngFor="let option of currentOptions">
+    <input (click)="setUserAnswer(option)" type="radio" value={{option}} name="answer" id="{{option}}">
+    <label for="{{option}}">{{option}}</label>
+  </p>
+</div>

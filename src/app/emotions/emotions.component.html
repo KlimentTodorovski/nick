@@ -1,17 +1,1 @@
-<div class="container">
-    <p class="alert alert-success" *ngIf="messageCorrect">Точен одговор</p>
-    <p class="alert alert-danger" *ngIf="messageError">Точниот одговор е {{answers.correct_answer}}</p>
-    <div *ngIf="!quizOver" class="text-center">
-        <app-emotion-questions [questionIndex]="currentIndex" (answers)="receiveAnswers($event)"
-            (totalQuestions)="getTotalQuestions($event)">
-        </app-emotion-questions>
-        <button class="btn btn-outline-success" (click)="goNext()">Следно</button>
-    </div>
-
-    <!--This div renders if quizOver is true-->
-    <div *ngIf="quizOver" class="border over">
-        <h1>Твојот резултат е {{score}} / {{totalQuestions}}</h1>
-        <img src="assets/bravo.gif" />
-        <a class="btn btn-outline-success" href="/home">Дома</a>
-    </div>
-</div>
+<app-questions [questions]="questions" [imageType]="imageType"></app-questions>
