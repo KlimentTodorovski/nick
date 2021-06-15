@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import { MathRoutingModule } from './math-routing.module';
 
 @NgModule({
-  declarations: [ MathRoutingModule.components ],
+  declarations: [
+    MathRoutingModule.components
+  ],
   imports: [
     CommonModule,
     MathRoutingModule

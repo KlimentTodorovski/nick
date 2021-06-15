@@ -1,1 +1,39 @@
-<p>math works!</p>
+<div *ngIf="route.children.length === 0" class="container margin-top">
+  <div class="row">
+    <div class="col-6">
+        <div class="card float-end card-max-width">
+          <img class="card-img-top" src="../../assets/Math/math-addition.jpg">
+          <div class="card-body text-center">
+            <button class="btn btn-outline-success" routerLink="numbers">Numbers</button>
+          </div>
+        </div>
+    </div>
+    <div class="col-6">
+      <div class="card card-max-width">
+        <img class="card-img-top" src="../../assets/Math/math-addition.jpg">
+        <div class="card-body text-center">
+          <button class="btn btn-outline-success" routerLink="addition">Addition</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-6">
+      <div class="card float-end card-max-width">
+        <img class="card-img-top" src="../../assets/Math/math-addition.jpg">
+        <div class="card-body text-center">
+          <button class="btn btn-outline-success" routerLink="substraction">Substraction</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card card-max-width">
+        <img class="card-img-top" src="../../assets/Math/math-addition.jpg">
+        <div class="card-body text-center">
+          <button class="btn btn-outline-success" routerLink="multiplication">Multiplication</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
