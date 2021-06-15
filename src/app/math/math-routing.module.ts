@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MathComponent } from './math.component';
-import { MathAdditionComponent } from './math-addition/math-addition.component';
-import { MathSubtractionComponent } from './math-subtraction/math-subtraction.component';
-import { MathMultiplicationComponent } from './math-multiplication/math-multiplication.component';
 
 const routes: Routes = [
   {
@@ -13,19 +10,19 @@ const routes: Routes = [
     children: [
       {
         path: 'numbers',
-        loadChildren: () => import('../math/math-addition/math-addition.module').then(m => m.MathAdditionModule)
+        loadChildren: () => import('../math/math-numbers/math-numbers.module').then(m => m.MathNumbersModule)
       },
       {
         path: 'addition',
-        component: MathAdditionComponent
+        loadChildren: () => import('../math/math-addition/math-addition.module').then(m => m.MathAdditionModule)
       },
       {
         path: 'substraction',
-        component: MathSubtractionComponent
+        loadChildren: () => import('../math/math-subtraction/math-subtraction.module').then(m => m.MathSubtractionModule)
       },
       {
         path: 'multiplication',
-        component: MathMultiplicationComponent
+        loadChildren: () => import('../math/math-multiplication/math-multiplication.module').then(m => m.MathMultiplicationModule)
       },
     ]
   }

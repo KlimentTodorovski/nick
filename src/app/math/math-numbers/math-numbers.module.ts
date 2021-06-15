@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MathAdditionRoutingModule } from './math-addition-routing.module';
+import { MathNumbersRoutingModule } from './math-numbers-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
-    MathAdditionRoutingModule.components
+    MathNumbersRoutingModule.components
   ],
   imports: [
     CommonModule,
-    MathAdditionRoutingModule,
+    MathNumbersRoutingModule,
     SharedModule
   ]
 })
 
-export class MathAdditionModule { }
+export class MathNumbersModule { }

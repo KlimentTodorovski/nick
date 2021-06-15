@@ -1,9 +1,0 @@
-<div class="container" style="margin-top: 10%;">
-  Прашање {{questionIndex+1}} од {{questions.length}}
-  <br>
-  <h5>{{currentQuestion}}</h5>
-  <p *ngFor="let option of currentOptions">
-    <input (click)="setUserAnswer(option)" type="radio" value={{option}} name="answer">
-    <span>{{option}}</span>
-  </p>
-</div>

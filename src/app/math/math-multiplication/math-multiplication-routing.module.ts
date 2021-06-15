@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MathMultiplicationComponent } from './math-multiplication.component';
 import { RouterModule, Routes } from '@angular/router';
-import { MathAdditionComponent } from './math-addition.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MathAdditionComponent
+    component: MathMultiplicationComponent
   },
 ]
 
@@ -17,7 +17,6 @@ const routes: Routes = [
   ],
   exports: [ RouterModule ]
 })
-
-export class MathAdditionRoutingModule {
-  static components = [ MathAdditionComponent ];
+export class MathMultiplicationRoutingModule {
+  static components = [ MathMultiplicationComponent ];
 }
