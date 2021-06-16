@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Answers, ImageType, Question } from 'src/app/interfaces/answers';
 
 @Component({
@@ -18,6 +19,10 @@ export class QuestionsComponent implements OnInit {
   @Input() questions: Question[];
   @Input() imageType: ImageType;
   image: string = null;
+
+  constructor(private toastr: ToastrService) {
+
+  }
 
   ngOnInit(): void {
     this.totalQuestions = this.questions.length;
@@ -48,13 +53,16 @@ export class QuestionsComponent implements OnInit {
 
   async updateScore() {
     if (this.answers.user_answer === this.answers.correct_answer) {
+      this.toastr.success('Точен одговор.', 'Браво!');
       this.score++;
-      this.messageCorrect = true
+      this.messageCorrect = true;
       window.scroll(0, 0);
       await new Promise(resolve => setTimeout(resolve, 3000));
-      this.messageCorrect = false
+      this.messageCorrect = false;
     }
     else {
+      const message: string = "Точниот одговор е: " + this.answers.correct_answer;
+      this.toastr.error(message, ':(');
       this.messageError = true
       window.scroll(0, 0);
       await new Promise(resolve => setTimeout(resolve, 3000));
