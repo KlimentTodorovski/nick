@@ -6,29 +6,36 @@ import { Question } from 'src/app/interfaces/answers';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit, DoCheck {
-
+export class QuestionComponent implements OnInit {
+  
   @Input() questions: Question[];
   @Input() questionIndex: number;
   currentQuestion: string;
-  currentOptions: any;
+  currentOptions: string[];
   userAnswer: string;
   correctAnswer: string;
   @Input() image: string;
+  index: number;
 
   ngOnInit(): void {
+    this.index = -1;
   }
 
-  ngDoCheck(): void {
-    this.currentQuestion = this.questions[this.questionIndex].question;
-    this.currentOptions = this.questions[this.questionIndex].options;
+  ngOnChanges(): void {
+    if (this.questionIndex != this.index) {
+      this.index++;
+      this.currentQuestion = this.questions[this.questionIndex].question;
+      this.currentOptions = this.questions[this.questionIndex].options;
+      document.getElementsByName("answer").forEach(a => a.setAttribute('checked', 'false'))
+    }
   }
 
   setUserAnswer(option: string) {
     this.userAnswer = option;
     this.correctAnswer = this.questions[this.questionIndex].answer;
     this.answers.emit(
-      { user_answer: this.userAnswer, correct_answer: this.correctAnswer });
+      { user_answer: this.userAnswer, correct_answer: this.correctAnswer, index: this.questionIndex });
+    this.currentOptions = []
   }
 
   @Output() answers = new EventEmitter<{ user_answer: string, correct_answer: string }>();

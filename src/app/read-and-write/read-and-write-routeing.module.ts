@@ -6,8 +6,14 @@ import { ReadAndWriteComponent } from './read-and-write.component';
 const routes: Routes = [
   {
     path: '',
-    component: ReadAndWriteComponent
- }
+    component: ReadAndWriteComponent,
+    children: [
+      {
+        path: 'training',
+        loadChildren: () => import('./training/training.module').then(m => m.TrainingModule)
+      }
+    ]
+  }
 ]
 
 @NgModule({
@@ -15,9 +21,9 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports: [ RouterModule ]
+  exports: [RouterModule]
 })
 
 export class ReadAndWriteRouteingModule {
-  static components = [ ReadAndWriteComponent ];
+  static components = [ReadAndWriteComponent];
 }
