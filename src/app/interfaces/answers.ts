@@ -1,7 +1,6 @@
 export interface Answers {
     user_answer: string,
-    correct_answer: string,
-    index:number
+    correct_answer: string
 }
 
 export interface Question {

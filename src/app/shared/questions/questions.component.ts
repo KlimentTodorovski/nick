@@ -25,7 +25,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.totalQuestions = this.questions.length-1;
+    this.totalQuestions = this.questions.length - 1;
     if (this.imageType) {
       switch (this.imageType) {
         case ImageType.Emotions: {
@@ -41,11 +41,9 @@ export class QuestionsComponent implements OnInit {
   }
 
   goNext() {
-    if (this.currentIndex == this.answers.index) {
-      this.updateScore().then(() => this.currentIndex = this.currentIndex + 1)
-      if (this.currentIndex === this.totalQuestions) {
-        this.endQuiz();
-      }
+    this.updateScore().then(() => this.currentIndex = this.currentIndex + 1)
+    if (this.currentIndex === this.totalQuestions) {
+      this.endQuiz();
     }
   }
 

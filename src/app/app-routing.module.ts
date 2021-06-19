@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'read-and-write', loadChildren: () => import('./read-and-write/read-and-writing.module').then(m => m.ReadAndWriteModule) },
   { path: 'sport', loadChildren: () => import('./sport/sport.module').then(m => m.SportModule) },
   { path: 'emotions', loadChildren: () => import('./emotions/emotions.module').then(m => m.EmotionModule) },
+  { path: 'animals', loadChildren: () => import('./animals/animals.module').then(m => m.AnimalsModule) },
   { path: '**', pathMatch: 'full', redirectTo: '/home' }
 ];
 

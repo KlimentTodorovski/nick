@@ -6,7 +6,7 @@ import { Question } from 'src/app/interfaces/answers';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent  {
   
   @Input() questions: Question[];
   @Input() questionIndex: number;
@@ -34,7 +34,7 @@ export class QuestionComponent implements OnInit {
     this.userAnswer = option;
     this.correctAnswer = this.questions[this.questionIndex].answer;
     this.answers.emit(
-      { user_answer: this.userAnswer, correct_answer: this.correctAnswer, index: this.questionIndex });
+      { user_answer: this.userAnswer, correct_answer: this.correctAnswer});
     this.currentOptions = []
   }
 
