@@ -19,6 +19,7 @@ export class QuestionsComponent implements OnInit {
   @Input() questions: Question[];
   @Input() imageType: ImageType;
   image: string = null;
+  isMath: boolean = false;
 
   constructor(private toastr: ToastrService) {
 

@@ -1,6 +1,4 @@
 .container {
-  width: 100vh;
-  height: 100vh;
   display: grid;
   place-items: center;
   font-size: 18px;
@@ -16,8 +14,27 @@ h5 {
   font-size: 30px;
   color: lightseagreen;
 }
-p:hover{
+
+.answer:hover {
   cursor: pointer;
   font-weight: bold;
-  color: rgb(11, 114, 76);
+}
+
+.grow {
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.grow:hover {
+    transform: scale(1.5);
+    margin-right: 6%; /* fallback for ancient browsers that don't support calc() */
+    margin-right: calc(5% + 10px);
+    margin-left: 5%;
+    background-color: lightseagreen;
+    font-weight: bold;
+}
+
+h1 {
+  font-size: 5em;
 }

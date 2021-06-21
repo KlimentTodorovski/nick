@@ -1,36 +1,46 @@
 <div *ngIf="route.children.length === 0" class="container margin-top">
   <div class="row">
-    <div class="col-6">
-        <div class="card float-end card-max-width">
-          <img class="card-img-top" src="assets/Math/numbers.jpg">
-          <div class="card-body text-center">
-            <button class="btn btn-outline-success" routerLink="numbers">Броеви</button>
-          </div>
-        </div>
-    </div>
-    <div class="col-6">
+    <div class="col">
       <div class="card card-max-width">
-        <img class="card-img-top" src="../../assets/Math/addition.jpg">
-        <div class="card-body text-center">
-          <button class="btn btn-outline-success" routerLink="addition">Собирање</button>
+        <div class="card-header text-center">
+          <h5 class="mt-1">Броеви</h5>
+        </div>
+        <div class="card-body">
+          <span class="helper"></span>
+          <img class="card-img grow img-fluid" src="assets/Math/numbers.jpg" routerLink="numbers">
         </div>
       </div>
     </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-6">
-      <div class="card float-end card-max-width">
-        <img class="card-img-top" src="../../assets/Math/subtraction.png">
-        <div class="card-body text-center">
-          <button class="btn btn-outline-success" routerLink="substraction">Одземање</button>
+    <div class="col">
+      <div class="card card-max-width">
+        <div class="card-header text-center">
+          <h5 class="mt-1">Собирање</h5>
+        </div>
+        <div class="card-body">
+          <span class="helper"></span>
+          <img class="card-img grow img-fluid" src="../../assets/Math/addition.jpg" routerLink="addition">
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col">
       <div class="card card-max-width">
-        <img class="card-img-top" src="../../assets/Math/multiplication.jpg">
-        <div class="card-body text-center">
-          <button class="btn btn-outline-success" routerLink="multiplication">Множење</button>
+        <div class="card-header text-center">
+          <h5 class="mt-1">Одземање</h5>
+        </div>
+        <div class="card-body">
+          <span class="helper"></span>
+          <img class="card-img grow img-fluid" src="../../assets/Math/subtraction.png" routerLink="substraction">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-max-width">
+        <div class="card-header text-center">
+          <h5 class="mt-1">Множење</h5>
+        </div>
+        <div class="card-body">
+          <span class="helper"></span>
+          <img class="card-img grow img-fluid" src="../../assets/Math/multiplication.jpg" routerLink="multiplication">
         </div>
       </div>
     </div>

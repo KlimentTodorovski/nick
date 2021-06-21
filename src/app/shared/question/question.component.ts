@@ -7,7 +7,7 @@ import { Question } from 'src/app/interfaces/answers';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent  {
-  
+
   @Input() questions: Question[];
   @Input() questionIndex: number;
   currentQuestion: string;
@@ -16,6 +16,9 @@ export class QuestionComponent  {
   correctAnswer: string;
   @Input() image: string;
   index: number;
+  numberOne = null;
+  numberTwo = null;
+  sign = null;
 
   ngOnInit(): void {
     this.index = -1;
@@ -27,6 +30,11 @@ export class QuestionComponent  {
       this.currentQuestion = this.questions[this.questionIndex].question;
       this.currentOptions = this.questions[this.questionIndex].options;
       document.getElementsByName("answer").forEach(a => a.setAttribute('checked', 'false'))
+    }
+    if (!this.image) {
+      this.numberOne = this.currentQuestion.substring(0,1);
+      this.sign = this.currentQuestion.substring(1,2);
+      this.numberTwo = this.currentQuestion.substring(2,3);
     }
   }
 
