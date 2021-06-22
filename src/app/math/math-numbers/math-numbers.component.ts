@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Question } from 'src/app/interfaces/answers';
 
 @Component({
@@ -6,24 +6,19 @@ import { Question } from 'src/app/interfaces/answers';
   templateUrl: './math-numbers.component.html',
   styleUrls: ['./math-numbers.component.css']
 })
-export class MathNumbersComponent {
+export class MathNumbersComponent implements OnInit {
 
-  questions: Question[] = [
-    {
-      question: 'Колку букви "e" имаме - е, е, е?',
-      options: ['3', '5', '6'],
-      answer: '3'
-    },
-    {
-      question: 'Колку букви "e" имаме - е, е?',
-      options: ['4', '2', '7'],
-      answer: '2'
-    },
-    {
-      question: 'Колку букви "e" имаме - е, е, е, е, е, е?',
-      options: ['1', '9', '6'],
-      answer: '6'
-    }
-  ];
+
+
+  ngOnInit(): void {
+  
+  }
+
+ onClick(num){
+  console.log('here')
+  var myAudio = new Audio(`assets/numbers/${num}.mp3`);
+  myAudio.play();
+  myAudio.autoplay;
+ }
 
 }

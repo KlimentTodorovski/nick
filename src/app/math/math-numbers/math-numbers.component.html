@@ -1,1 +1,219 @@
-<app-questions [questions]="questions"></app-questions>
+<!-- Visit https://nicolaskadis.info/posts/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/0.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(0)"/>
+                        <h4 class="card-title">Нула</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/1.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(1)"/>
+                        <h4 class="card-title">Еден</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 1 -->
+
+        <!-- Card 2 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/2.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(2)"/>
+                        <h4 class="card-title">Два</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+
+        <!-- End Card 2 -->
+
+        <!-- Card 3 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/3.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(3)"/>
+                        <h4 class="card-title">Три</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 3 -->
+
+        <!-- Card 4 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/4.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(4)"/>
+                        <h4 class="card-title">Четири</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 4 -->
+
+        <!-- Card 5 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/5.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(5)"/>
+                        <h4 class="card-title">Пет</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 5 -->
+
+        <!-- Card 6 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/6.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(6)"/>
+                        <h4 class="card-title">Шест</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 6 -->
+        <!-- Card 3 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/7.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(7)"/>
+                        <h4 class="card-title">Седум</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 3 -->
+
+        <!-- Card 4 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/8.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(8)"/>
+                        <h4 class="card-title">Осум</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 4 -->
+
+        <!-- Card 5 -->
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/9.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(9)"/>
+                        <h4 class="card-title">Девет</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+
+        <div class="col-md-4 card-container">
+            <div class="card-flip">
+                <!-- Card 5 Front -->
+                <div class="card front card-inverse">
+                    <img class="card-img img-fluid" src="assets/numbers/10.jpg" alt="Card image">
+                </div>
+                <!-- End Card 1 Front -->
+                <!-- Card 1 Back -->
+                <div class="card back">
+                    <div class="card-block">
+                        <img  src="assets/speaker.png" class="img-speaker" (click)="onClick(10)"/>
+                        <h4 class="card-title">Десет</h4>
+                    </div>
+                </div>
+                <!-- End Card 1 Back -->
+            </div>
+        </div>
+        <!-- End Card 5 -->
+    </div>
+</div>
