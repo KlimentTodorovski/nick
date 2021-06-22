@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-1" style="margin-top: 25%;">
+      <button *ngIf="currentLetterIndex > 0" class="btn btn-primary" (click)="previous()">Буква {{alphabet[currentLetterIndex-1].letter}}</button>
+    </div>
+    <div class="col-5">
+      <p style="font-size: 28em; float: right; margin-right: 10px;">{{currentLetter.letter}}</p>
+    </div>
+    <div class="col-5" style="margin-top: 16%;">
+      <h1>Мала буква: {{currentLetter.lower}}</h1>
+      <h1>Голема буква: {{currentLetter.upper}}</h1>
+      <h1>Зборови на буквата {{currentLetter.letter}}:</h1>
+      <h2 *ngFor="let word of currentLetter.words">{{word}}</h2>
+    </div>
+    <div class="col-1" style="margin-top: 25%;">
+      <button *ngIf="currentLetterIndex < 30" class="btn btn-primary float-end" (click)="next()">Буква {{alphabet[currentLetterIndex+1].letter}}</button>
+    </div>
+  </div>
+</div>

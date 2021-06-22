@@ -13,3 +13,10 @@ export enum ImageType {
   Emotions = 1,
   Sport
 }
+
+export interface Letter {
+  letter: string,
+  lower: string,
+  upper: string,
+  words: string[]
+}
