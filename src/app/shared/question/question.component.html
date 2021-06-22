@@ -5,7 +5,8 @@
         <div *ngIf="image" class="card-header">
           <p class="mt-1">Прашање {{questionIndex+1}} од {{questions.length}}</p>
           <hr>
-          <h5>{{currentQuestion}}</h5>
+          <h5 *ngIf="image ==='emotion'">{{currentQuestion}}</h5>
+          <h6 *ngIf="image ==='sport'">{{currentQuestion}}</h6>
         </div>
         <div *ngIf="!image" class="card-header">
           <p class="mt-1">Прашање {{questionIndex+1}} од {{questions.length}}</p>

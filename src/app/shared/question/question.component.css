@@ -15,6 +15,11 @@ h5 {
   color: lightseagreen;
 }
 
+h6 {
+  font-size: 20px;
+  color: lightseagreen;
+}
+
 .answer:hover {
   cursor: pointer;
   font-weight: bold;
