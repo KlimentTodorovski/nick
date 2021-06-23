@@ -14,10 +14,11 @@
 }
 
 .card-body {
-  height: 500px;
+  height: 300px;
 }
 
 img {
+  height: 100%;
   vertical-align: middle;
 }
 
@@ -25,4 +26,9 @@ img {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+
+.container{
+  height: 300vh;
+  width: 300vh;
 }

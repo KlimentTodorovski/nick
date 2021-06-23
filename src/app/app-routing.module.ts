@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'sport', loadChildren: () => import('./sport/sport.module').then(m => m.SportModule) },
   { path: 'emotions', loadChildren: () => import('./emotions/emotions.module').then(m => m.EmotionModule) },
   { path: 'animals', loadChildren: () => import('./animals/animals.module').then(m => m.AnimalsModule) },
+  { path: 'parents', loadChildren: () => import('./parents/parents.module').then(m => m.ParentsModule) },
+  { path: 'emotions-answers', loadChildren: () => import('./emotions-answer/emotions-answers.module').then(m => m.EmotionsAnswersModule) },
   { path: '**', pathMatch: 'full', redirectTo: '/home' }
 ];
 

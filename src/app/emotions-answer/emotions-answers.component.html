@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div *ngIf="image" class="card-header">
+            <p class="mt-1">Прашање {{questionIndex+1}} од {{questions.length}}</p>
+            <hr>
+            <h5>Како се чувствувам?</h5>
+          </div>
+        
+          <div *ngIf="image" class="card-body card-img">
+            <img class="mb-3" src="assets/emotion_{{questionIndex}}.jpg" />
+          </div>
+          <p *ngIf='correct==answered' style="text-align: center; color: green;">ТОЧЕН ОДГОВОР</p>
+          <p *ngIf='correct!=answered' style="text-align: center; color: red;">ПОГРЕШЕН ОДГОВОР</p>
+          <div class="card-footer grow" *ngFor="let option of currentOptions">
+            <p>{{option}} 
+                <img class="tick" *ngIf='option==correct' src="assets/tick.png"/>
+                <img class="tick" *ngIf='correct!=answered && option==answered' src="assets/cross.png"/>
+            </p>
+          </div>
+          <button *ngIf="questionIndex < 7" class="btn btn-primary float-end" (click)="updateQuestion()">Следно</button>
+          <a *ngIf="questionIndex == 7" class="btn btn-primary float-end" href="parents">Назад</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
