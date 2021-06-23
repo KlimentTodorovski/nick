@@ -11,7 +11,8 @@ export interface Question {
 
 export enum ImageType {
   Emotions = 1,
-  Sport
+  Sport,
+  Addition
 }
 
 export interface Letter {
