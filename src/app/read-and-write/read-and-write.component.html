@@ -1,22 +1,25 @@
-<div *ngIf="route.children.length === 0"  class="container">
-    <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="assets/azbuka.jpg">
-            <div class="card-body">
-              <p class="card-text">Учење азбука преку видео</p>
-              <a  routerLink="training" class="btn btn-primary">Почни</a>
+<body class="inventory-body">
+  <div *ngIf="route.children.length === 0"  class="container">
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top" src="assets/azbuka.jpg">
+              <div class="card-body">
+                <p class="card-text">Учење азбука преку видео</p>
+                <a  routerLink="training" class="btn btn-primary">Почни</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top" src="assets/quiz.jpg">
+              <div class="card-body">
+                <p class="card-text">Преглед на буквите</p>
+                <a routerLink="alphabet" class="btn btn-primary">Почни</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img class="card-img-top" src="assets/quiz.jpg">
-            <div class="card-body">
-              <a routerLink="alphabet" class="btn btn-primary">Квиз</a>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-<router-outlet></router-outlet>
+  </div>
+  <router-outlet></router-outlet>
+</body>

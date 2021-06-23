@@ -6,3 +6,8 @@
   top: 80%;
   margin-right: 40.2%;
 }
+
+html, body, app-root {
+  height: 100%;
+  margin: 0;
+}

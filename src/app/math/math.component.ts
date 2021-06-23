@@ -8,7 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MathComponent implements OnInit {
 
-  constructor(public route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute) {
+    document.body.style.background = '#FFDBCF';
+  }
 
   ngOnInit(): void {
   }

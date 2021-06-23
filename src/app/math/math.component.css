@@ -29,6 +29,16 @@ img {
 }
 
 .container{
-  height: 300vh;
+  min-height: 100%;
   width: 300vh;
+}
+
+.inventory-body {
+  position: fixed;
+  min-width: 100%;
+  background-image: url("../../assets/Math/math.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }

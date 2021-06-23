@@ -1,10 +1,9 @@
-button{
-    margin:auto
-}
-
-.over{
-    min-width: 100vh;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
+.inventory-body {
+  position: fixed;
+  min-width: 100%;
+  background-image: url("../../assets/rainbow.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }

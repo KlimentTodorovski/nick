@@ -1,5 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { Answers, ImageType, Question } from '../interfaces/answers';
+import { Component } from '@angular/core';
+import { ImageType, Question } from '../interfaces/answers';
 
 
 @Component({

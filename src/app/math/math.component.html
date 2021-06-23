@@ -1,49 +1,52 @@
-<div *ngIf="route.children.length === 0" class="container margin-top">
-  <div class="row">
-    <div class="col">
-      <div class="card card-max-width">
-        <div class="card-header text-center">
-          <h5 class="mt-1">Броеви</h5>
-        </div>
-        <div class="card-body">
-          <span class="helper"></span>
-          <img class="card-img grow img-fluid" src="assets/Math/numbers.jpg" routerLink="numbers">
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card card-max-width">
-        <div class="card-header text-center">
-          <h5 class="mt-1">Собирање</h5>
-        </div>
-        <div class="card-body">
-          <span class="helper"></span>
-          <img class="card-img grow img-fluid" src="../../assets/Math/addition.jpg" routerLink="addition">
+<body  class="inventory-body">
+  <div *ngIf="route.children.length === 0" class="container margin-top">
+    <div class="row">
+      <div class="col">
+        <div class="card card-max-width">
+          <div class="card-header text-center">
+            <h5 class="mt-1">Броеви</h5>
+          </div>
+          <div class="card-body">
+            <span class="helper"></span>
+            <img class="card-img grow img-fluid" src="assets/Math/numbers.jpg" routerLink="numbers">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card card-max-width">
-        <div class="card-header text-center">
-          <h5 class="mt-1">Одземање</h5>
-        </div>
-        <div class="card-body">
-          <span class="helper"></span>
-          <img class="card-img grow img-fluid" src="../../assets/Math/subtraction.png" routerLink="substraction">
+      <div class="col">
+        <div class="card card-max-width">
+          <div class="card-header text-center">
+            <h5 class="mt-1">Собирање</h5>
+          </div>
+          <div class="card-body">
+            <span class="helper"></span>
+            <img class="card-img grow img-fluid" src="../../assets/Math/addition.jpg" routerLink="addition">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card card-max-width">
-        <div class="card-header text-center">
-          <h5 class="mt-1">Множење</h5>
+      <div class="col">
+        <div class="card card-max-width">
+          <div class="card-header text-center">
+            <h5 class="mt-1">Одземање</h5>
+          </div>
+          <div class="card-body">
+            <span class="helper"></span>
+            <img class="card-img grow img-fluid" src="../../assets/Math/subtraction.png" routerLink="substraction">
+          </div>
         </div>
-        <div class="card-body">
-          <span class="helper"></span>
-          <img class="card-img grow img-fluid" src="../../assets/Math/multiplication.jpg" routerLink="multiplication">
+      </div>
+      <div class="col">
+        <div class="card card-max-width">
+          <div class="card-header text-center">
+            <h5 class="mt-1">Множење</h5>
+          </div>
+          <div class="card-body">
+            <span class="helper"></span>
+            <img class="card-img grow img-fluid" src="../../assets/Math/multiplication.jpg" routerLink="multiplication">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<router-outlet></router-outlet>
+</body>
+  <router-outlet></router-outlet>
+
