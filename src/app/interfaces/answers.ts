@@ -18,5 +18,6 @@ export interface Letter {
   letter: string,
   lower: string,
   upper: string,
-  words: string[]
+  words: string[],
+  position: number
 }
