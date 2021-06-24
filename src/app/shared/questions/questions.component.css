@@ -9,11 +9,6 @@ button {
     place-items: center;
 }
 
-.container {
-  width: 40%;
-  height: 100%;
-}
-
 .grow {
   position: relative;
   display: inline-block;

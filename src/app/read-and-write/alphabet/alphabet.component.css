@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+  .letter-button {
+    margin-right: 3px;
+  }
+
+  .letter {
+    font-size: 22em; float: right; margin-right: 10px;
+  }
+
+  .sec-col {
+    margin-top: 10%;
+  }
+
+  .next-button {
+    margin-top: 19%;
+  }
+
+  .prev-button {
+    margin-top: 19%;
+  }
+}
+
+@media (max-width: 768px) {
+  .letter-button {
+    margin-right: 0px;
+  }
+
+  .sec-col {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .dont {
+    display: none;
+  }
+
+}
