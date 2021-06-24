@@ -6,11 +6,11 @@
 }
 
 .inventory-body {
-  position: fixed;
+  margin:0;
+  height: 100%;
   min-width: 100%;
   background-image: url("../../assets/forest.png");
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
   background-size: cover;
 }
