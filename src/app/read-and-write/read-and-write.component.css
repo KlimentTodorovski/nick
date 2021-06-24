@@ -1,9 +1,7 @@
 .card-img-top{
     height: 450px;
 }
-.container{
-    margin-top: 5%;
-}
+
 
 @media (min-width: 768px) {
   .inventory-body {
