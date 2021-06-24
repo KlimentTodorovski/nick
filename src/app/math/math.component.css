@@ -28,7 +28,6 @@ img {
 
 .container{
   min-height: 100%;
-  width: 300vh;
 }
 
 @media (min-width: 768px) {

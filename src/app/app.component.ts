@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'nick';
+  collapsed = true;
+  toggleCollapsed(): void {
+    this.collapsed = !this.collapsed;
+  }
 }
