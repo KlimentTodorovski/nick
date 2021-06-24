@@ -11,3 +11,24 @@ html, body, app-root {
   height: 100%;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .toast-top-center {
+    top: 80%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .toast-top-center {
+    top: 80%;
+    margin-right: 31.5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .toast-top-center {
+    top: 80%;
+    margin-right: 35%;
+  }
+}

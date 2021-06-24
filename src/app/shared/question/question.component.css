@@ -43,3 +43,14 @@ h6 {
 h1 {
   font-size: 5em;
 }
+
+.image > img {
+  height: 100%; /* make the img's width 100% of the height of .container */
+}
+
+@media (max-width: 768px) {
+  img {
+    height: 200px;
+    width: 200px;
+  }
+}

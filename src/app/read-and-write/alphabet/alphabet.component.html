@@ -1,23 +1,23 @@
 <div class="container">
   <div class="row">
     <div class="col text-center mt-5">
-      <button class="btn btn-warning" style="margin-right: 3px;" *ngFor="let letter of alphabet" (click)="goTo(letter.position)">{{letter.letter}}</button>
+      <button class="btn btn-warning letter-button" *ngFor="let letter of alphabet" (click)="goTo(letter.position)">{{letter.letter}}</button>
     </div>
   </div>
   <div class="row">
-    <div class="col-1" style="margin-top: 19%;">
+    <div class="col-1 dont next-button">
       <button *ngIf="currentLetterIndex > 0" class="btn btn-primary" (click)="previous()">Буква {{alphabet[currentLetterIndex-1].letter}}</button>
     </div>
-    <div class="col-5">
-      <p style="font-size: 22em; float: right; margin-right: 10px;">{{currentLetter.letter}}</p>
+    <div class="col-5 dont">
+      <p class="letter">{{currentLetter.letter}}</p>
     </div>
-    <div class="col-5" style="margin-top: 10%;">
+    <div class="col-12 col-sm-5 col-lg-5 col-xl-5 col-xxl-5 sec-col">
       <h1 class="text-dark">Мала буква: {{currentLetter.lower}}</h1>
-      <h1 class="text-white">Голема буква: {{currentLetter.upper}}</h1>
+      <h1 class="text-success">Голема буква: {{currentLetter.upper}}</h1>
       <h1 class="text-danger">Зборови на буквата {{currentLetter.letter}}:</h1>
       <h2 class="text-warning" *ngFor="let word of currentLetter.words">{{word}}</h2>
     </div>
-    <div class="col-1" style="margin-top: 19%;">
+    <div class="col-1 dont next-button">
       <button *ngIf="currentLetterIndex < 30" class="btn btn-primary float-end" (click)="next()">Буква {{alphabet[currentLetterIndex+1].letter}}</button>
     </div>
   </div>
