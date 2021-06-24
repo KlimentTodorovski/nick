@@ -1,4 +1,5 @@
 <div class="container">
+  <img  src="assets/speaker.png" class="center-block img-speaker" (click)="onClick()"/>
   <div class="row">
     <div class="col text-center mt-5">
       <button class="btn btn-warning letter-button" *ngFor="let letter of alphabet" (click)="goTo(letter.position)">{{letter.letter}}</button>
@@ -15,7 +16,7 @@
       <h1 class="text-dark">Мала буква: {{currentLetter.lower}}</h1>
       <h1 class="text-success">Голема буква: {{currentLetter.upper}}</h1>
       <h1 class="text-danger">Зборови на буквата {{currentLetter.letter}}:</h1>
-      <h2 class="text-warning" *ngFor="let word of currentLetter.words">{{word}}</h2>
+      <h2 class="text-danger" *ngFor="let word of currentLetter.words">{{word}}</h2>
     </div>
     <div class="col-1 dont next-button">
       <button *ngIf="currentLetterIndex < 30" class="btn btn-primary float-end" (click)="next()">Буква {{alphabet[currentLetterIndex+1].letter}}</button>

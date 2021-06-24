@@ -44,7 +44,8 @@ export class AlphabetComponent implements OnInit {
 
   currentLetter: Letter;
   currentLetterIndex: number;
-
+  myAudio = new Audio('assets/azbuka.mp3');
+  song = false
   constructor() { }
 
   ngOnInit(): void {
@@ -72,4 +73,13 @@ export class AlphabetComponent implements OnInit {
       this.currentLetter = this.alphabet[this.currentLetterIndex];
     }
   }
+  onClick(){
+    this.song = !this.song;
+    if(this.song){
+      this.myAudio.play();
+    }else{
+      this.myAudio.pause()
+      this.myAudio.currentTime = 0;
+    }
+   }
 }

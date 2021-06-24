@@ -4,7 +4,7 @@
   <div *ngIf="route.children.length === 0"  class="container">
       <div class="row">
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card" (click)='onClick(1)'>
               <img class="card-img-top" src="assets/azbuka.jpg">
               <div class="card-body">
                 <p class="card-text">Учење азбука преку видео</p>
@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card"  (click)='onClick(2)'>
               <img class="card-img-top" src="assets/quiz.jpg">
               <div class="card-body">
                 <p class="card-text">Преглед на буквите</p>
