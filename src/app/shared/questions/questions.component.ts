@@ -37,6 +37,10 @@ export class QuestionsComponent implements OnInit {
           this.image = 'sport'
           break;
         }
+        case ImageType.Addition: {
+          this.image = 'addition'
+          break;
+        }
       }
     }
   }

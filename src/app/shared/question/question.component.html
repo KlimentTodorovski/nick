@@ -4,7 +4,7 @@
       <div class="card">
         <div *ngIf="image" class="card-header">
           <p class="mt-1">Прашање {{questionIndex+1}} од {{questions.length}}</p>
-          <hr>
+          <hr *ngIf="image !== 'addition'">
           <h5 *ngIf="image ==='emotion'">{{currentQuestion}}</h5>
           <h6 *ngIf="image ==='sport'">{{currentQuestion}}</h6>
         </div>
@@ -15,8 +15,11 @@
           <h1>{{sign}}</h1>
           <h1>{{numberTwo}}</h1>
         </div>
-        <div *ngIf="image" class="card-body card-img">
+        <div *ngIf="image && image !== 'addition'" class="card-body card-img">
           <img class="mb-3 img-fluid" src="assets/{{image}}_{{questionIndex}}.jpg" />
+        </div>
+        <div *ngIf="image && image === 'addition'" class="card-body card-img">
+          <img class="mb-3 img-fluid" src="assets/{{image}}_{{questionIndex}}.png" />
         </div>
         <div class="card-footer grow" *ngFor="let option of currentOptions">
           <button class="btn answer" (click)="setUserAnswer(option)" id="option/{{questionIndex}}" value="option">{{option}}</button>
