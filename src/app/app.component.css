@@ -1,3 +1,7 @@
 .root {
     background-color: #FFDBCF;
 }
+
+.mr-1 {
+  margin-right: 3px;
+}
